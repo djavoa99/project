@@ -10,7 +10,7 @@ root.render(
     <App />
   </React.StrictMode>
 );
-
+// React.StrictMode는 리액트 프로젝트에서 리액트의 레거시 기능들을 사용하지 못하게 하는 기능입니다.
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
