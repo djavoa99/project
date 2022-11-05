@@ -1,7 +1,17 @@
-import EventPractice from "./EventPractice";
+import { Component } from 'react';
+import ScrollBox from './ScrollBox.js';
 
-const App = () => {
-  return <EventPractice />
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <ScrollBox ref={(ref) => this.ScrollBox=ref}/>
+        <button onClick={() => this.ScrollBox.scrollToBottom()}>
+          맨 밑으로
+        </button>
+      </div>
+    )
+  }
 }
-// 컴포넌트 내부는 하나의 DOM 트리 구조로 이루어져야 한다는 규칙이 있다.
+
 export default App;
