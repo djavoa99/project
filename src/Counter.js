@@ -1,36 +1,28 @@
-import { Component } from "react";
+import useInputs from './useInputs';
 
-class Counter extends Component {
-    state = {
-        number : 0,
-        fixedNumber : 0
-    };
-    render() {
-        const {number, fixedNumber} = this.state; // state를 조회할 때는 this.state로 조회
-        return (
-            <div>
-                <h1>{number}</h1>
-                <h2>바뀌지 않는 값 : {fixedNumber}</h2>
-                <button
-                    // onClick을 통해 버튼이 클릭되었을 때 호출할 함수를 지정합니다 
-                    onClick={() => {
-                        // this.setState를 이용하여 state에 새로운 값을 넣을 수 있다
-                        this.setState(
-                            {
-                                number : number + 1
-                            },
-                            () => {
-                                console.log('방금 setState가 호출되었습니다.');
-                                console.log(this.state);
-                            }
-                        )
-                    }}
-                >
-                    + 1
-                </button>
-            </div>
-        );
-    }
-}
+const Info = () => {
+  const [state, onChange] = useInputs({
+    name: '',
+    nickname: ''
+  });
+  const { name, nickname } = state;
 
-export default Counter;
+  return (
+    <div>
+      <div>
+        <input name="name" value={name} onChange={onChange} />
+        <input name="nickname" value={nickname} onChange={onChange} />
+      </div>
+      <div>
+        <div>
+          <b>이름:</b> {name}
+        </div>
+        <div>
+          <b>닉네임: </b> {nickname}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Info;
