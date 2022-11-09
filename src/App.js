@@ -1,7 +1,14 @@
-import Counter from './Counter';
+import { Component } from "react";
+import StyledComponent from "./StyledComponent";
 
-const App = () => {
-  return <Counter />;
-};
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <StyledComponent />
+      </div>
+    );
+  }
+}
 
 export default App;
