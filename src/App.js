@@ -1,12 +1,15 @@
-import { Route, Routes } from 'react-router-dom';
-import NewsPage from './pages/NewsPage';
+import ColorBox from './components/ColorBox';
+import { ColorProvider } from './contexts/color';
+import SelectColors from './components/SelectColors';
 
 const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<NewsPage />} />
-      <Route path="/:category" element={<NewsPage />} />
-    </Routes>
+    <ColorProvider>
+      <div>
+        <SelectColors />
+        <ColorBox />
+      </div>
+    </ColorProvider>
   );
 };
 
