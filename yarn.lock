@@ -1606,6 +1606,20 @@
     hoist-non-react-statics "^3.3.1"
     react-is "^16.12.0"
 
+"@loadable/server@^5.15.2":
+  version "5.15.2"
+  resolved "https://registry.yarnpkg.com/@loadable/server/-/server-5.15.2.tgz#2aeefa1604c39fc87a20e567ef3ed8647224dd1a"
+  integrity sha512-Nk/6Plz8qTn+A+u2qg/vrbYZwTmzzjy5bw4Ts80pM/rqW8H37IooKU/HVWSje63RZ4vTqEsHsrdiX97RB9dMjw==
+  dependencies:
+    lodash "^4.17.15"
+
+"@loadable/webpack-plugin@^5.15.2":
+  version "5.15.2"
+  resolved "https://registry.yarnpkg.com/@loadable/webpack-plugin/-/webpack-plugin-5.15.2.tgz#460acf5dc0d56c6aef98c7d5f1c2be033422fa8d"
+  integrity sha512-+o87jPHn3E8sqW0aBA+qwKuG8JyIfMGdz3zECv0t/JF0KHhxXtzIlTiqzlIYc5ZpFs/vKSQfjzGIR5tPJjoXDw==
+  dependencies:
+    make-dir "^3.0.2"
+
 "@nicolo-ribaudo/eslint-scope-5-internals@5.1.1-v1":
   version "5.1.1-v1"
   resolved "https://registry.yarnpkg.com/@nicolo-ribaudo/eslint-scope-5-internals/-/eslint-scope-5-internals-5.1.1-v1.tgz#dbf733a965ca47b1973177dc0bb6c889edcfb129"
@@ -4439,7 +4453,7 @@ expect@^29.0.0:
     jest-message-util "^29.2.1"
     jest-util "^29.2.1"
 
-express@^4.17.3:
+express@^4.17.3, express@^4.18.2:
   version "4.18.2"
   resolved "https://registry.yarnpkg.com/express/-/express-4.18.2.tgz#3fabe08296e930c796c19e3c516979386ba9fd59"
   integrity sha512-5/PsL6iGPdfQ/lKM1UuielYgv3BUoJfz1aUwU9vHZ+J7gyvwdQXFEBIEIaxeGf0GIcreATNyBExtalisDbuMqQ==
